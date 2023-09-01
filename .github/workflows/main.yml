@@ -10,6 +10,10 @@ jobs:
         uses: gitahernandez/my-docker-action-fhernandez@v3
         with:
           who-to-greet: 'Mona the Octocat'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: 'FIXED
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
