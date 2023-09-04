@@ -11,6 +11,6 @@ jobs:
         with:
           who-to-greet: 'Mona the Octocat'
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      # Use the output from the `hello` step
+      # Use the output from the `hello` step f
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
