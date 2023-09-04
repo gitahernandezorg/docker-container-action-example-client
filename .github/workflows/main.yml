@@ -7,10 +7,14 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: gitahernandez/my-docker-action-fhernandez@v15
+        uses: gitahernandezorg/my-docker-action-fhernandez@v1
         with:
           who-to-greet: 'Mona the Octocat'
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.CLIENT_ID }}
+          github-token: ${{ secrets.SECRET_CLIENT }}
+          github-token: ${{ secrets.CERTIFICATE_PASSWORD }}
+
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
