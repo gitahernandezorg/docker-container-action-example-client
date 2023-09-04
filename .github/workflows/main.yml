@@ -10,11 +10,7 @@ jobs:
         uses: gitahernandezorg/my-docker-action-fhernandez@v1
         with:
           who-to-greet: 'Mona the Octocat'
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          github-token: ${{ secrets.CLIENT_ID }}
-          github-token: ${{ secrets.SECRET_CLIENT }}
-          github-token: ${{ secrets.CERTIFICATE_PASSWORD }}
-
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
