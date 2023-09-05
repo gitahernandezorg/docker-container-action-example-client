@@ -10,10 +10,10 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: gitahernandezorg/my-docker-action-fhernandez@v20
+        uses: gitahernandezorg/my-docker-action-fhernandez@v21
         with:
           who-to-greet: 'Mona the Octocat'
-          github_token: "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"
+          github_token: ${{ secrets.OWN_GITHUB_TOKEN }}
       # Use the output from the `hello` step f
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
