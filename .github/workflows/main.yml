@@ -8,11 +8,11 @@ jobs:
       who-to-greet-env: 'Felipe'
     steps:
       - name: Hello world action step
-        id: hello
-        uses: gitahernandezorg/my-docker-action-fhernandez@v22
+        id: api
+        uses: gitahernandezorg/my-docker-action-fhernandez@v23
         with:
           who-to-greet: 'Mona the Octocat'
           github_token: ${{ secrets.OWN_GITHUB_TOKEN }}
-      # Use the output from the `hello` step f
+      # Use the output from the `hello`
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        run: echo "Example ${{ steps.api.outputs.test_variable }}"
