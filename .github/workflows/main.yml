@@ -4,9 +4,8 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-latest
     name: A job to say hello
-    permissions:
-      actions: read
-      pull-requests: write
+    env:
+      who-to-greet-env: 'Felipe'
     steps:
       - name: Hello world action step
         id: hello
