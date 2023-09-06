@@ -9,10 +9,13 @@ jobs:
     steps:
       - name: Hello world action step
         id: api
-        uses: gitahernandezorg/my-docker-action-fhernandez@v24
+        uses: gitahernandezorg/my-docker-action-fhernandez@v25
         with:
           who-to-greet: 'Mona the Octocat'
           github_token: ${{ secrets.OWN_GITHUB_TOKEN }}
-      # Use the output from the `hello`
-      - name: Get the output time
+
+      - name: Print test_variable
         run: echo "Example ${{ steps.api.outputs.test_variable }}"
+
+      - name: Print Multiline
+        run: echo "Example ${{ steps.api.outputs.multiline }}"
