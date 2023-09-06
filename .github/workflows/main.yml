@@ -21,4 +21,4 @@ jobs:
         run: echo "Example ${{ steps.api.outputs.multiline }}"
 
       - name: Print Env variable
-        run: echo "Example ${{ secrets.DEREK_TEST }}"
+        run: echo "Example ${{ secrets.MY_SECRET_FB2CDB1CCCC946D1A23ABDEA0645FB67 }}"
