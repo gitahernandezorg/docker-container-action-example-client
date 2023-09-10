@@ -15,10 +15,8 @@ jobs:
           github_token: ${{ secrets.OWN_GITHUB_TOKEN }}
 
       - name: Print test_variable
-        run: echo "Example ${{ steps.api.outputs.test_variable }}"
+        run: echo "${{ steps.api.outputs.test_variable }}"
 
       - name: Print Multiline
-        run: echo "Example ${{ steps.api.outputs.multiline }}"
+        run: echo "${{ steps.api.outputs.multiline }}"
 
-      - name: Print Env variable
-        run: echo "Example ${{ secrets.MY_SECRET_FB2CDB1CCCC946D1A23ABDEA0645FB67 }}"
