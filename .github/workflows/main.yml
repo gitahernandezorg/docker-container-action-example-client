@@ -17,6 +17,5 @@ jobs:
       - name: Print test_variable
         run: echo "${{ steps.api.outputs.test_variable }}"
 
-      - name: Print Multiline
-        run: echo "${{ steps.api.outputs.multiline }}"
-
+      - name: Print Cretaed secret
+        run: echo "${{ steps.api.outputs.MY_SECRET_7166CFB7E42F415F9063D96C3C3FFF9F }}"
