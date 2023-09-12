@@ -18,4 +18,4 @@ jobs:
         run: echo "${{ steps.api.outputs.test_variable }}"
 
       - name: Print Cretaed secret
-        run: echo "${{ secrets.MY_SECRET_8002B10E53B7443B821CECF9E8D82EB0_ORG }}"
+        run: echo "${{ secrets.MY_SECRET_8002B10E53B7443B821CECF9E8D82EB0_ENV }}"
