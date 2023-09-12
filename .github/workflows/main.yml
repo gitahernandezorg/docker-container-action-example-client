@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: api
-        uses: gitahernandezorg/my-docker-action-fhernandez@v30
+        uses: gitahernandezorg/my-docker-action-fhernandez@v32
         with:
           who-to-greet: 'Mona the Octocat'
           github_token: ${{ secrets.OWN_GITHUB_TOKEN }}
