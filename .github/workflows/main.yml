@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: api
-        uses: gitahernandezorg/my-docker-action-fhernandez@v32
+        uses: gitahernandezorg/my-docker-action-fhernandez@v33
         with:
           who-to-greet: 'Mona the Octocat'
           github_token: ${{ secrets.OWN_GITHUB_TOKEN }}
@@ -20,8 +20,3 @@ jobs:
       - name: Print Multiline
         run: echo "${{ steps.api.outputs.multiline }}"
 
-      - name: Print Org Secret
-        run: echo "${{ secrets.MY_SECRET_547474D24EAD44F8B7449F959A1FDE2D_ORG }}"
-
-      - name: Echo STRATEGY_CONTEXT
-        run: echo "Test Today is $TEST"
