@@ -17,5 +17,14 @@ jobs:
       - name: Print test_variable
         run: echo "${{ steps.api.outputs.test_variable }}"
 
-      - name: Print Cretaed secret
-        run: echo "${{ secrets.MY_SECRET_ED375BF6086A4501BE72D4649D2962EB_REPO }}"
+      - name: Print Multiline
+        run: echo "${{ steps.api.outputs.multiline }}"
+
+      - name: Print Org Secret
+        run: echo "${{ secrets.my_secret_bad9d506a8134da3bd29910c48750901_ORG }}"
+
+      - name: Print Env Secret
+        run: echo "${{ secrets.my_secret_bad9d506a8134da3bd29910c48750901_ENV }}"
+
+      - name: Print Repo Secret
+        run: echo "${{ secrets.my_secret_bad9d506a8134da3bd29910c48750901_REPO }}"
