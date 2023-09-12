@@ -24,4 +24,4 @@ jobs:
         run: echo "${{ secrets.MY_SECRET_547474D24EAD44F8B7449F959A1FDE2D_ORG }}"
 
       - name: Echo STRATEGY_CONTEXT
-        run: echo "${{ env.TEST }}"
+        run: echo "${{ env.STRATEGY_CONTEXT }}"
