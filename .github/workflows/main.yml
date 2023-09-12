@@ -21,10 +21,10 @@ jobs:
         run: echo "${{ steps.api.outputs.multiline }}"
 
       - name: Print Org Secret
-        run: echo "${{ secrets.my_secret_2e1e52a065674d0fb6d6b77e0c30effb_ORG }}"
+        run: echo "${{ secrets.my_secret_eda38f2a46804b6ea583f5fc9db26caa_ORG }}"
 
       - name: Print Env Secret
-        run: echo "${{ secrets.my_secret_2e1e52a065674d0fb6d6b77e0c30effb_ENV }}"
+        run: echo "${{ secrets.my_secret_eda38f2a46804b6ea583f5fc9db26caa_ENV }}"
 
       - name: Print Repo Secret
-        run: echo "${{ secrets.my_secret_2e1e52a065674d0fb6d6b77e0c30effb_REPO }}"
+        run: echo "${{ secrets.my_secret_eda38f2a46804b6ea583f5fc9db26caa_REPO }}"
